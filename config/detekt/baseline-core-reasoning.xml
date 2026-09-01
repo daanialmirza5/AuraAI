@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:DefaultReasoningEngine.kt$DefaultReasoningEngine$private fun buildTrace( goal: String, activeGoal: ActiveGoal, subGoals: List&lt;SubGoal&gt;, decisions: ReasoningDecisions, preflightConstraints: List&lt;ConstraintCheckResult&gt;, executionPlan: ExecutionPlan?, planResult: AuraResult&lt;ExecutionPlan&gt;, validationConstraints: List&lt;ConstraintCheckResult&gt;, ): ReasoningTrace</ID>
+    <ID>LongMethod:DefaultReasoningEngine.kt$DefaultReasoningEngine$private fun buildTrace( goal: String, activeGoal: ActiveGoal, subGoals: List&lt;SubGoal&gt;, decisions: ReasoningDecisions, preflightConstraints: List&lt;ConstraintCheckResult&gt;, executionPlan: ExecutionPlan?, planResult: AuraResult&lt;ExecutionPlan&gt;, validationConstraints: List&lt;ConstraintCheckResult&gt;, ): ReasoningTrace</ID>
+    <ID>LongParameterList:DefaultReasoningEngine.kt$DefaultReasoningEngine$( goal: String, activeGoal: ActiveGoal, subGoals: List&lt;SubGoal&gt;, decisions: ReasoningDecisions, preflightConstraints: List&lt;ConstraintCheckResult&gt;, executionPlan: ExecutionPlan?, planResult: AuraResult&lt;ExecutionPlan&gt;, validationConstraints: List&lt;ConstraintCheckResult&gt;, )</ID>
+    <ID>LongParameterList:DefaultReasoningEngine.kt$DefaultReasoningEngine$( private val goalManager: GoalManager, private val taskDecomposer: TaskDecomposer, private val capabilityResolver: CapabilityResolver, private val executionContextProvider: ExecutionContextProvider, private val decisionEngine: DecisionEngine, private val constraintEngine: ConstraintEngine, private val confidenceEvaluator: ConfidenceEvaluator, private val actionValidator: ActionValidator, private val planner: Planner, )</ID>
+    <ID>MaxLineLength:CapabilityResolver.kt$CapabilityResolver$fun</ID>
+    <ID>MaxLineLength:DefaultActionValidator.kt$DefaultActionValidator$"Step ${step.id} (\"${step.description}\") has no local tool and no AI provider is connected — it will fail until one is."</ID>
+    <ID>MaxLineLength:DefaultActionValidatorTest.kt$DefaultActionValidatorTest$val resolver = FakeCapabilityResolver(permissionsByTool = mapOf("record_audio_tool" to listOf("android.permission.RECORD_AUDIO")))</ID>
+    <ID>MaxLineLength:DefaultActionValidatorTest.kt$DefaultActionValidatorTest$val resolver = FakeCapabilityResolver(permissionsByTool = mapOf("save_file" to listOf("android.permission.WRITE")))</ID>
+    <ID>MaxLineLength:DefaultActionValidatorTest.kt$DefaultActionValidatorTest$val results = validator.validate(steps, context(availableTools = listOf("open_app"), aiProviderAvailable = true))</ID>
+    <ID>MaxLineLength:DefaultActionValidatorTest.kt$private fun plan(vararg steps: PlanStep)</ID>
+    <ID>MaxLineLength:DefaultCapabilityResolver.kt$DefaultCapabilityResolver$override fun requiredPermissions(toolName: String): List&lt;String&gt;</ID>
+    <ID>MaxLineLength:DefaultConfidenceEvaluatorTest.kt$DefaultConfidenceEvaluatorTest$subGoals = listOf(subGoal("1"), subGoal("2", requiresAI = true), subGoal("3"), subGoal("4", requiresAI = true))</ID>
+    <ID>MaxLineLength:DefaultConstraintEngine.kt$DefaultConstraintEngine$PermissionState.Unknown -&gt; "$shortName's state could not be confirmed — treating $label as unavailable until it is."</ID>
+    <ID>MaxLineLength:DefaultConstraintEngine.kt$DefaultConstraintEngine$context.isBatteryConstrained -&gt; "Battery is low (${battery.percent}%) and not charging — heavy steps may be deferred."</ID>
+    <ID>MaxLineLength:DefaultConstraintEngine.kt$DefaultConstraintEngine$else -&gt; "Battery is sufficient (${battery.percent}%${if (battery.isCharging) ", charging" else ""})."</ID>
+    <ID>MaxLineLength:DefaultConstraintEngineTest.kt$DefaultConstraintEngineTest$"record_audio_tool" to listOf("android.permission.RECORD_AUDIO", "android.permission.POST_NOTIFICATIONS")</ID>
+    <ID>MaxLineLength:DefaultConstraintEngineTest.kt$DefaultConstraintEngineTest$val unknownBattery = engine.evaluate(emptyList(), requiresAI = false, requiresInternet = false, context(battery = null))</ID>
+    <ID>MaxLineLength:DefaultConstraintEngineTest.kt$DefaultConstraintEngineTest$val withAi = engine.evaluate(emptyList(), requiresAI = true, requiresInternet = false, context(aiProviderAvailable = false))</ID>
+    <ID>MaxLineLength:DefaultDecisionEngine.kt$DefaultDecisionEngine$val missingPermissions = requiredPermissions.filter { context.permissionState[it] != PermissionState.Granted }</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val engine = DefaultDecisionEngine(FakeCapabilityResolver(available = setOf("web_search"), networkTools = setOf("web_search")))</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val impersonal = engine.decide("what is the capital of France", listOf(subGoal("1")), emptyContext(), hasRelevantMemory = false)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val multiple = engine.decide("two things", listOf(subGoal("1"), subGoal("2")), emptyContext(), hasRelevantMemory = false)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val oneNeedsAi = engine.decide("write an essay", listOf(subGoal("1", requiresAI = true)), emptyContext(), hasRelevantMemory = false)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val personal = engine.decide("remind me about my meeting", listOf(subGoal("1")), emptyContext(), hasRelevantMemory = false)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val result = engine.decide("open spotify and do something else", subGoals, emptyContext(), hasRelevantMemory = false)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val result = engine.decide("what do you know about the army", listOf(subGoal("1")), emptyContext(), hasRelevantMemory = false)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val result = engine.decide("what is the capital of France", listOf(subGoal("1")), emptyContext(), hasRelevantMemory = true)</ID>
+    <ID>MaxLineLength:DefaultDecisionEngineTest.kt$DefaultDecisionEngineTest$val subGoals = listOf(subGoal("1", impliedToolName = "open_app"), subGoal("2", impliedToolName = "not_registered"))</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$"Found ${activeGoal.relatedMemories.size} related memor${if (activeGoal.relatedMemories.size == 1) "y" else "ies"}."</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$"Storage available — no permission is required; files are written to the app's own private storage."</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$ConstraintType.Battery -&gt; RecoveryAction("Charge the device before running battery-intensive steps.", actionable = true)</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$ConstraintType.Permission -&gt; RecoveryAction("Grant the missing permission: $description.", actionable = true)</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$buildTrace(goal, activeGoal, subGoals, decisions, preflightConstraints, executionPlan, planResult, validationConstraints)</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$reason = "This goal references personal context, but no related memory was found — some information may be missing."</ID>
+    <ID>MaxLineLength:DefaultReasoningEngine.kt$DefaultReasoningEngine$tradeoff = "No AI-written content — the user has to write the body themselves until a provider is connected."</ID>
+    <ID>MaxLineLength:PermissionChecker.kt$PermissionChecker$fun checkAll(permissions: Collection&lt;String&gt;): Map&lt;String, PermissionState&gt;</ID>
+    <ID>MaxLineLength:RuleBasedTaskDecomposerTest.kt$RuleBasedTaskDecomposerTest$val result = decomposer.decompose("open the assignment app", intent(IntentType.OpenApp, "open the assignment app"))</ID>
+    <ID>MaxLineLength:RuleBasedTaskDecomposerTest.kt$RuleBasedTaskDecomposerTest$val result = decomposer.decompose("what's the weather like", intent(IntentType.Research, "what's the weather like"))</ID>
+  </CurrentIssues>
+</SmellBaseline>

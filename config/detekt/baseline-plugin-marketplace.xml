@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:LocalPluginMarketplaceClient.kt$LocalPluginMarketplaceClient$PluginError.NotSupported("No remote plugin marketplace is connected in this phase — nothing to check against.")</ID>
+    <ID>MaxLineLength:LocalPluginMarketplaceClient.kt$LocalPluginMarketplaceClient$listings.filter { it.name.lowercase().contains(needle) || it.description.lowercase().contains(needle) }</ID>
+  </CurrentIssues>
+</SmellBaseline>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:DefaultExecutionCoordinator.kt$DefaultExecutionCoordinator$val ready = remaining.filter { agent -&gt; agent.dependsOnCapabilities.all { it in satisfiedCapabilities } }</ID>
+    <ID>MaxLineLength:DefaultResultAggregatorTest.kt$DefaultResultAggregatorTest$val outcomes = listOf(succeeded("a", "did a", confidence = 0.6f), succeeded("b", "did b", confidence = 1.0f), failed("c"))</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcher.kt$DefaultTaskDispatcher$AuraError.Unknown("Agent '${agent.name}' timed out after ${policy.timeoutMillis}ms (attempt $attempt).")</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcher.kt$DefaultTaskDispatcher$eventBus.publish(AgentCompletedEvent(agent.name, task.id, succeeded = false, durationMillis = durationMillis))</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcher.kt$DefaultTaskDispatcher$eventBus.publish(TaskFailedEvent(taskId = task.id, reason = finalResult.error.message, agentName = agent.name))</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcher.kt$DefaultTaskDispatcher$val finalResult = lastResult ?: AuraResult.Failure(AuraError.Unknown("Agent '${agent.name}' produced no result."))</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcherTest.kt$DefaultTaskDispatcherTest$val agent = ScriptedAgent(results = listOf(AuraResult.Success(AgentResult(summary = "too slow"))), delayMillisPerCall = 500)</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcherTest.kt$DefaultTaskDispatcherTest$val outcome = dispatcher.dispatch(agent, task(), DefaultSharedContext("goal"), DispatchPolicy(maxAttempts = 3))</ID>
+    <ID>MaxLineLength:DefaultTaskDispatcherTest.kt$private fun task()</ID>
+    <ID>MaxLineLength:DispatchPolicy.kt$DispatchPolicy$*</ID>
+  </CurrentIssues>
+</SmellBaseline>

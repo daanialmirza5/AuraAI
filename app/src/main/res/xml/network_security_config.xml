@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Every cloud provider (Claude/OpenAI/Gemini) is HTTPS-only and needs no exception here — this
+  config exists solely for OllamaProvider, a self-hosted server most users run over plain HTTP on
+  their own machine or emulator loopback. Android blocks cleartext traffic by default since API 28;
+  without this, Ollama would fail with a network-security-policy error before ever reaching the
+  server, regardless of whether Ollama itself is running. Scoped narrowly to loopback/private
+  addresses only — every other domain still requires HTTPS, unchanged from the platform default.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <!-- The Android emulator's alias for the host machine's own loopback address. -->
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

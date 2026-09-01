@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:KeywordIntentRecognizer.kt$KeywordIntentRecognizer$extractSlots = { text -&gt; mapOf("appName" to afterFirstTrigger(text, "open ", "launch ", "start the ")) }</ID>
+    <ID>MaxLineLength:KeywordIntentRecognizer.kt$KeywordIntentRecognizer$extractSlots = { text -&gt; mapOf("destination" to afterFirstTrigger(text, "navigate to", "directions to", "drive to")) }</ID>
+    <ID>MaxLineLength:KeywordIntentRecognizer.kt$KeywordIntentRecognizer$triggers = listOf("hello", "hi ", "hey", "how are you", "thanks", "thank you", "good morning", "good night")</ID>
+    <ID>MaxLineLength:KeywordIntentRecognizer.kt$KeywordIntentRecognizer$triggers = listOf("turn on", "turn off", "toggle", "lights", "thermostat", "lock the door", "automation")</ID>
+    <ID>ReturnCount:KeywordIntentRecognizer.kt$KeywordIntentRecognizer$override suspend fun recognize(utterance: String): AuraResult&lt;RecognizedIntent&gt;</ID>
+  </CurrentIssues>
+</SmellBaseline>

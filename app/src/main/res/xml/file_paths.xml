@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Scoped to a "captures" subfolder of the app's own cache dir — nothing else the app writes
+         is exposed through this provider. -->
+    <cache-path name="captures" path="captures/" />
+</paths>

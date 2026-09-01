@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:DefaultPluginRuntime.kt$DefaultPluginRuntime$PluginResult.Failure(PluginError.Unknown("Plugin '$pluginId' has no context — it was never successfully loaded."))</ID>
+    <ID>MaxLineLength:DefaultPluginUpdateManager.kt$DefaultPluginUpdateManager$"New version ${newManifest.version} is not newer than the installed ${existing.manifest.version}."</ID>
+    <ID>ReturnCount:DefaultPluginRuntime.kt$DefaultPluginRuntime$override suspend fun disable(pluginId: String): PluginResult&lt;Unit&gt;</ID>
+    <ID>ReturnCount:DefaultPluginRuntime.kt$DefaultPluginRuntime$override suspend fun enable(pluginId: String): PluginResult&lt;Unit&gt;</ID>
+    <ID>ReturnCount:DefaultPluginRuntime.kt$DefaultPluginRuntime$override suspend fun unload(pluginId: String): PluginResult&lt;Unit&gt;</ID>
+    <ID>ReturnCount:DefaultPluginUpdateManager.kt$DefaultPluginUpdateManager$override suspend fun update( newPlugin: Plugin, grantedPermissions: Set&lt;PluginPermission&gt;, ): PluginResult&lt;Unit&gt;</ID>
+  </CurrentIssues>
+</SmellBaseline>

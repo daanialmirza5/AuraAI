@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:CodingAgent.kt$CodingAgent$AgentHealth(AgentHealthStatus.Degraded, "No AI provider is connected yet — code generation will fail until one is.")</ID>
+    <ID>MaxLineLength:DefaultAgentRegistry.kt$DefaultAgentRegistry$override fun findByIntent(intent: IntentType): List&lt;Agent&gt;</ID>
+    <ID>MaxLineLength:MemoryAgent.kt$MemoryAgent$)</ID>
+    <ID>MaxLineLength:ToolBackedAgentTest.kt$ToolBackedAgentTest$permissionChecker = FakePermissionChecker(mapOf("android.permission.POST_NOTIFICATIONS" to PermissionState.Denied))</ID>
+    <ID>MaxLineLength:ToolBackedAgentTest.kt$ToolBackedAgentTest$permissionChecker = FakePermissionChecker(mapOf("android.permission.POST_NOTIFICATIONS" to PermissionState.Granted))</ID>
+    <ID>MaxLineLength:VisionAgent.kt$VisionAgent$AgentHealth(AgentHealthStatus.Unavailable, "No vision-capable AI provider is connected — this agent cannot function yet.")</ID>
+  </CurrentIssues>
+</SmellBaseline>

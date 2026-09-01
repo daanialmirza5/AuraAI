@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:TemplatePlanner.kt$TemplatePlanner$private fun singleStepPlan( intent: RecognizedIntent, goal: String, ): List&lt;PlanStep&gt;</ID>
+    <ID>LongMethod:TemplatePlanner.kt$TemplatePlanner$private fun singleStepPlan( intent: RecognizedIntent, goal: String, ): List&lt;PlanStep&gt;</ID>
+    <ID>MaxLineLength:ExecutionPlan.kt$ExecutionPlan$fun withStep(updated: PlanStep): ExecutionPlan</ID>
+    <ID>MaxLineLength:TemplatePlanner.kt$TemplatePlanner$toolName = null</ID>
+  </CurrentIssues>
+</SmellBaseline>

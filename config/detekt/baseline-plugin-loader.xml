@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:DefaultPluginLoader.kt$DefaultPluginLoader$is PluginResult.Failure -&gt; PluginLoadResult(manifest.id, success = false, detail = enableResult.error.message)</ID>
+    <ID>MaxLineLength:DefaultPluginLoader.kt$DefaultPluginLoader$override suspend fun loadAll(): List&lt;PluginLoadResult&gt;</ID>
+    <ID>ReturnCount:DefaultPluginLoader.kt$DefaultPluginLoader$private suspend fun loadOne(plugin: Plugin): PluginLoadResult</ID>
+  </CurrentIssues>
+</SmellBaseline>

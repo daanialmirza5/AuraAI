@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- XML-level mirror of the Nocturne base tokens, used only where Compose Color.kt
+         isn't reachable yet (window background, splash screen, adaptive icon). The
+         source of truth for all in-app colors is core/designsystem/theme/Color.kt. -->
+    <color name="aura_bg">#05060B</color>
+    <color name="aura_accent">#9184D9</color>
+    <color name="aura_accent_light">#D2CEFD</color>
+    <color name="aura_accent_deep">#403876</color>
+</resources>
