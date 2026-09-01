@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:DefaultContextBuilder.kt$DefaultContextBuilder$TextOverlap.jaccardSimilarity(existing.memory.content, candidate.memory.content) &gt;= DUPLICATE_SIMILARITY_THRESHOLD</ID>
+    <ID>MaxLineLength:DefaultKnowledgeGraph.kt$DefaultKnowledgeGraph$return memory.copy(relationships = (memory.relationships + suggested).distinctBy { it.targetMemoryId to it.type })</ID>
+    <ID>MaxLineLength:DefaultKnowledgeGraphTest.kt$DefaultKnowledgeGraphTest$memory(MemoryCategory.Task, "A task", relationships = listOf(MemoryRelationship(project.id, RelationshipType.PartOf)))</ID>
+    <ID>MaxLineLength:DefaultKnowledgeGraphTest.kt$DefaultKnowledgeGraphTest$val b = memory(MemoryCategory.Task, "B", relationships = listOf(MemoryRelationship(a.id, RelationshipType.PartOf)))</ID>
+    <ID>MaxLineLength:DefaultKnowledgeGraphTest.kt$DefaultKnowledgeGraphTest$val c = memory(MemoryCategory.Task, "C", relationships = listOf(MemoryRelationship(b.id, RelationshipType.PartOf)))</ID>
+    <ID>MaxLineLength:InMemoryWorkingMemoryStore.kt$InMemoryWorkingMemoryStore$override fun observeActive(): Flow&lt;List&lt;MemoryEntry&gt;&gt;</ID>
+    <ID>MaxLineLength:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$listOf("assignment", "homework", "assigned to me", "was assigned", "due for class", "due for the course")</ID>
+    <ID>MaxLineLength:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$listOf("deadline", "due", "my exam", "my goal", "i plan to", "i'm planning to", "next week") + WEEKDAYS</ID>
+    <ID>MaxLineLength:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$listOf("i am working on", "i'm working on", "working on", "my project", "i am building", "i'm building")</ID>
+    <ID>MaxLineLength:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$listOf("i prefer", "i like", "i love", "i hate", "i dislike", "i enjoy", "my favorite", "my birthday")</ID>
+    <ID>MaxLineLength:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$listOf("meeting with", "call with", "sync with", "meeting at", "scheduled a meeting", "1:1 with", "catch up with")</ID>
+    <ID>MaxLineLength:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$listOf("wrote a doc", "the document", "shared a document", "drafted a report", "the report", "my notes on")</ID>
+    <ID>MaxLineLength:RuleBasedMemoryExtractor.kt$RuleBasedMemoryExtractor$)</ID>
+    <ID>MaxLineLength:RuleBasedMemoryExtractor.kt$RuleBasedMemoryExtractor$private fun splitIntoClauses(text: String): List&lt;String&gt;</ID>
+    <ID>MaxLineLength:RuleBasedMemoryExtractor.kt$RuleBasedMemoryExtractor$val dateMillis = DateExpressionParser.parseEpochMillis(clause) ?: return MemoryExtractionResult(memory = memory)</ID>
+    <ID>MaxLineLength:WeightedMemoryRanker.kt$WeightedMemoryRanker$TextOverlap.jaccardSimilarity(memory.content + " " + memory.tags.joinToString(" "), conversationText)</ID>
+    <ID>ReturnCount:DefaultKnowledgeGraph.kt$DefaultKnowledgeGraph$override suspend fun neighborhood( memoryId: String, depth: Int, ): List&lt;MemoryEntry&gt;</ID>
+    <ID>ReturnCount:DefaultMemoryLifecycleManager.kt$DefaultMemoryLifecycleManager$override suspend fun mergeDuplicates(similarityThreshold: Float): AuraResult&lt;Int&gt;</ID>
+    <ID>ReturnCount:RuleBasedMemoryClassifier.kt$RuleBasedMemoryClassifier$override fun classify(text: String): MemoryClassification</ID>
+    <ID>ReturnCount:RuleBasedMemoryExtractor.kt$RuleBasedMemoryExtractor$private fun extractFromClause( clause: String, source: MemorySource, ): MemoryExtractionResult?</ID>
+    <ID>ReturnCount:WeightedMemoryRanker.kt$WeightedMemoryRanker$private fun relevanceTo( memory: MemoryEntry, targetIds: Set&lt;String&gt;, ): Float</ID>
+    <ID>ReturnCount:WeightedMemoryRanker.kt$WeightedMemoryRanker$private fun similarityScore( memory: MemoryEntry, query: String?, queryEmbedding: List&lt;Float&gt;?, ): Float</ID>
+  </CurrentIssues>
+</SmellBaseline>

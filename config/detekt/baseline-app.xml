@@ -1,0 +1,292 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>FunctionNaming:AppShellScreen.kt$@Composable fun AppShellScreen(onSignOut: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:AuraNavHost.kt$@Composable fun AuraNavHost(navController: NavHostController = rememberNavController())</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable fun AuraTabRoute(viewModel: AuraTabViewModel = hiltViewModel())</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun AuraTabScreen( uiState: AuraTabUiState, onSetSub: (AuraSub) -&gt; Unit, onOrbTap: () -&gt; Unit, onChatInputChange: (String) -&gt; Unit, onSend: () -&gt; Unit, onForgetMemory: (String) -&gt; Unit, onToggleDeveloperMode: () -&gt; Unit, onInspectTrace: (Long) -&gt; Unit, onDismissTrace: () -&gt; Unit, onDismissVoiceError: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun BoxScope.VoiceErrorBanner( message: String, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun ChatBubble( message: ChatMessage, inspectable: Boolean, onInspectTrace: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun ChatContent( messages: ImmutableList&lt;ChatMessage&gt;, chatInput: String, isTyping: Boolean, developerModeEnabled: Boolean, onInputChange: (String) -&gt; Unit, onSend: () -&gt; Unit, onInspectTrace: (Long) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun DeveloperModeToggle( enabled: Boolean, onToggle: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun MemoryContent( memories: ImmutableList&lt;Memory&gt;, onForget: (String) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun OrbContent( orbState: OrbState, onOrbTap: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun TraceOverlay( trace: ExecutionTrace, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AuraTabScreen.kt$@Composable private fun TypingIndicator()</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable fun AutomateRoute(viewModel: AutomateViewModel = hiltViewModel())</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun AutomateScreen( uiState: AutomateUiState, onSetSub: (AutomateSub) -&gt; Unit, onToggleAutomation: (String) -&gt; Unit, onToggleDevice: (String) -&gt; Unit, onRunQuickAction: (String, Map&lt;String, String&gt;) -&gt; Unit, onDismissQuickActionResult: () -&gt; Unit, onScanText: () -&gt; Unit, onAddWorkflow: (Workflow) -&gt; Unit, onSetWorkflowEnabled: (Workflow, Boolean) -&gt; Unit, onDeleteWorkflow: (Workflow) -&gt; Unit, onRunWorkflowNow: (Workflow) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun AutomationsView( automations: ImmutableList&lt;Automation&gt;, onToggle: (String) -&gt; Unit, onRunQuickAction: (String, Map&lt;String, String&gt;) -&gt; Unit, onScanText: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun BoxScope.QuickActionResultBanner( message: String, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun MarketplaceView()</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun PluginsView()</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun QuickActionsRow(onRun: (String, Map&lt;String, String&gt;) -&gt; Unit)</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun SmartHomeView( devices: ImmutableList&lt;Device&gt;, onToggle: (String) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun VisionQuickAction(onScanText: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:AutomateScreen.kt$@Composable private fun WorkflowsView( workflows: ImmutableList&lt;Workflow&gt;, onAdd: (Workflow) -&gt; Unit, onSetEnabled: (Workflow, Boolean) -&gt; Unit, onDelete: (Workflow) -&gt; Unit, onRunNow: (Workflow) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:BottomNavBar.kt$@Composable fun AuraBottomNavBar( items: List&lt;BottomNavEntry&gt;, selectedRoute: String, onSelect: (BottomNavEntry) -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Buttons.kt$@Composable fun AccentCircleButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, size: Dp = 44.dp, contentDescription: String? = null, content: @Composable () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Buttons.kt$@Composable fun AuraGradientButton( text: String, onClick: () -&gt; Unit, modifier: Modifier = Modifier, icon: (@Composable () -&gt; Unit)? = null, )</ID>
+    <ID>FunctionNaming:Buttons.kt$@Composable fun GlassBackButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, contentDescription: String? = "Back", content: @Composable () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Buttons.kt$@Composable fun GlassIconButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, size: Dp = 42.dp, cornerRadius: Dp = AuraRadius.xl, contentDescription: String? = null, content: @Composable () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Chips.kt$@Composable fun &lt;T&gt; SubTabChipRow( items: List&lt;T&gt;, selected: T, label: (T) -&gt; String, onSelect: (T) -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Chips.kt$@Composable fun StatusTag( text: String, color: androidx.compose.ui.graphics.Color, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Chips.kt$@Composable fun SubTabChip( text: String, isSelected: Boolean, onClick: () -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:DeviceIcons.kt$@Composable fun DeviceGlyph( icon: DeviceIcon, modifier: Modifier = Modifier, tint: Color = AuraColors.Accent, )</ID>
+    <ID>FunctionNaming:GlowOrb.kt$@Composable fun AuraOrbStage( modifier: Modifier = Modifier, size: Dp, showDashedRing: Boolean = true, showScan: Boolean = false, ringDuration: Int = 12000, ringReverseDuration: Int = 16000, scanDuration: Int = 5000, pulseDuration: Int = 3400, glowAlpha: Float = 0.4f, )</ID>
+    <ID>FunctionNaming:GlowOrb.kt$@Composable fun GradientOrbCore( modifier: Modifier = Modifier, size: Dp, stops: List&lt;Color&gt; = listOf(AuraColors.AccentLight, AuraColors.Accent, AuraColors.AccentDeep), glowColor: Color = AuraColors.Accent, glowAlpha: Float = 0.5f, glowSpread: Dp = size * 0.4f, pulseDurationMillis: Int? = null, )</ID>
+    <ID>FunctionNaming:GlowOrb.kt$@Composable fun RotatingRing( modifier: Modifier = Modifier, size: Dp, color: Color = AuraColors.Accent.copy(alpha = 0.35f), strokeWidthDp: Float = 1f, durationMillis: Int, reverse: Boolean = false, dashed: Boolean = false, )</ID>
+    <ID>FunctionNaming:GlowOrb.kt$@Composable fun ScanSweep( modifier: Modifier = Modifier, size: Dp, durationMillis: Int, color: Color = AuraColors.AccentLight, )</ID>
+    <ID>FunctionNaming:HomeScreen.kt$@Composable fun HomeRoute( onNavigateToTab: (String, String?) -&gt; Unit, viewModel: HomeViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:HomeScreen.kt$@Composable private fun DashboardContent( uiState: HomeUiState, onOpenNotifications: () -&gt; Unit, onOpenAura: () -&gt; Unit, onOpenDeviceHealth: () -&gt; Unit, onOpenBattery: () -&gt; Unit, onOpenSmartHome: () -&gt; Unit, onOpenAutomations: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:HomeScreen.kt$@Composable private fun HomeScreen( uiState: HomeUiState, onOpenNotifications: () -&gt; Unit, onBackToDashboard: () -&gt; Unit, onOpenAura: () -&gt; Unit, onOpenDeviceHealth: () -&gt; Unit, onOpenBattery: () -&gt; Unit, onOpenSmartHome: () -&gt; Unit, onOpenAutomations: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:HomeScreen.kt$@Composable private fun NotificationsContent( uiState: HomeUiState, onBack: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:HomeScreen.kt$@Composable private fun TimelineRow( entry: TimelineItem, isLast: Boolean, )</ID>
+    <ID>FunctionNaming:Indicators.kt$@Composable fun CircularGauge( progress: Float, modifier: Modifier = Modifier, size: Dp = 140.dp, strokeWidth: Dp = 14.dp, activeColor: Color = AuraColors.Success, trackColor: Color = AuraColors.TextPrimary.copy(alpha = 0.1f), content: @Composable () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Indicators.kt$@Composable fun EqualizerBars( active: Boolean, modifier: Modifier = Modifier, count: Int = 9, )</ID>
+    <ID>FunctionNaming:Indicators.kt$@Composable fun SegmentDots( total: Int, current: Int, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Indicators.kt$@Composable fun ThinProgressBar( progress: Float, modifier: Modifier = Modifier, trackColor: Color = AuraColors.TextPrimary.copy(alpha = 0.12f), brush: Brush = Brush.horizontalGradient(listOf(AuraColors.Accent, AuraColors.AccentLight)), height: Dp = 6.dp, )</ID>
+    <ID>FunctionNaming:LoginScreen.kt$@Composable fun LoginRoute( onAuthenticated: () -&gt; Unit, viewModel: LoginViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:LoginScreen.kt$@Composable private fun CredentialCard( label: String, value: String, letterSpaced: Boolean = false, )</ID>
+    <ID>FunctionNaming:LoginScreen.kt$@Composable private fun FingerprintGlyph(modifier: Modifier = Modifier)</ID>
+    <ID>FunctionNaming:LoginScreen.kt$@Composable private fun LoginScreen( uiState: LoginUiState, onRequestAuth: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:MiscIcons.kt$@Composable fun BellIcon( modifier: Modifier = Modifier, tint: Color = AuraColors.TextPrimary, )</ID>
+    <ID>FunctionNaming:MiscIcons.kt$@Composable fun CheckIcon( modifier: Modifier = Modifier, tint: Color = AuraColors.OnAccent, )</ID>
+    <ID>FunctionNaming:MiscIcons.kt$@Composable fun ChevronLeftIcon( modifier: Modifier = Modifier, tint: Color = AuraColors.TextPrimary, )</ID>
+    <ID>FunctionNaming:MiscIcons.kt$@Composable fun ChevronRightIcon( modifier: Modifier = Modifier, tint: Color = AuraColors.Accent, )</ID>
+    <ID>FunctionNaming:MiscIcons.kt$@Composable fun CloseIcon( modifier: Modifier = Modifier, tint: Color = AuraColors.TextPrimary.copy(alpha = 0.4f), )</ID>
+    <ID>FunctionNaming:MiscIcons.kt$@Composable fun SendIcon( modifier: Modifier = Modifier, tint: Color = AuraColors.OnAccent, )</ID>
+    <ID>FunctionNaming:NavIcons.kt$@Composable fun NavGlyph( type: NavIconType, tint: Color, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:OnboardingArt.kt$@Composable fun OnboardingArtGlyph( art: OnboardingArt, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:OnboardingScreen.kt$@Composable fun OnboardingRoute( onFinished: () -&gt; Unit, viewModel: OnboardingViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:OnboardingScreen.kt$@Composable private fun FloatingArtBadge(art: OnboardingArt)</ID>
+    <ID>FunctionNaming:OnboardingScreen.kt$@Composable private fun OnboardingScreen( uiState: OnboardingUiState, onNext: () -&gt; Unit, onSkip: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PermissionIcons.kt$@Composable fun PermissionGlyph( permission: AppPermission, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:PermissionsScreen.kt$@Composable fun PermissionsRoute( onFinished: () -&gt; Unit, viewModel: PermissionsViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:PermissionsScreen.kt$@Composable private fun PermissionRow( permission: AppPermission, isOn: Boolean, onToggle: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PermissionsScreen.kt$@Composable private fun PermissionsScreen( uiState: PermissionsUiState, onToggle: (AppPermission) -&gt; Unit, onActivate: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable fun ProfileRoute( onSignOut: () -&gt; Unit, viewModel: ProfileViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun AccessibilityDisclosureCard()</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun AnalyticsView()</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun BatteryView()</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun DeviceHealthView()</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun MemoryManagerView(onClearAllMemory: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun PersonalizationView( theme: ThemePreview, voice: AssistantVoice, voiceContinuousConversationEnabled: Boolean, onSetTheme: (ThemePreview) -&gt; Unit, onSetVoice: (AssistantVoice) -&gt; Unit, onSetVoiceContinuousConversationEnabled: (Boolean) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun ProfileMainView( onNavigateSettings: () -&gt; Unit, onSignOut: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun ProfileScreen( uiState: ProfileUiState, onSetSub: (ProfileSub) -&gt; Unit, onSetTheme: (ThemePreview) -&gt; Unit, onSetVoice: (AssistantVoice) -&gt; Unit, onSetVoiceContinuousConversationEnabled: (Boolean) -&gt; Unit, onSignOut: () -&gt; Unit, onSetProviderApiKey: (ProviderId, String) -&gt; Unit, onSetProviderBaseUrl: (ProviderId, String) -&gt; Unit, onSetActiveProvider: (ProviderId) -&gt; Unit, onClearAllMemory: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun ProviderSettingsCard( row: ProviderSettingsRow, onSetApiKey: (String) -&gt; Unit, onSetBaseUrl: (String) -&gt; Unit, onSetActive: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun SettingsView( providerRows: List&lt;ProviderSettingsRow&gt;, onSetProviderApiKey: (ProviderId, String) -&gt; Unit, onSetProviderBaseUrl: (ProviderId, String) -&gt; Unit, onSetActiveProvider: (ProviderId) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun SmallHeader(text: String)</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun StorageView()</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun ThemeSwatch( label: String, selected: Boolean, gradient: Brush, onClick: () -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:SplashScreen.kt$@Composable fun SplashRoute( onFinished: (route: String) -&gt; Unit, viewModel: SplashViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:SplashScreen.kt$@Composable private fun GlowPuck(size: Dp)</ID>
+    <ID>FunctionNaming:SplashScreen.kt$@Composable private fun SplashOrb()</ID>
+    <ID>FunctionNaming:SplashScreen.kt$@Composable private fun SplashScreen()</ID>
+    <ID>FunctionNaming:Surfaces.kt$@Composable fun GlassSurface( modifier: Modifier = Modifier, cornerRadius: Dp = AuraRadius.xl, fillAlpha: Float = 0.5f, borderColor: Color = AuraColors.TextPrimary.copy(alpha = 0.06f), onClick: (() -&gt; Unit)? = null, content: @Composable () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Surfaces.kt$@Composable fun SectionLabel( text: String, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Surfaces.kt$@Composable fun StatTile( label: String, value: String, modifier: Modifier = Modifier, valueColor: Color = AuraColors.TextPrimary, valueFontSize: TextUnit = 20.sp, onClick: (() -&gt; Unit)? = null, )</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun AuraAppTheme(content: @Composable () -&gt; Unit)</ID>
+    <ID>FunctionNaming:Toggle.kt$@Composable fun AuraToggleSwitch( checked: Boolean, onCheckedChange: () -&gt; Unit, modifier: Modifier = Modifier, label: String? = null, )</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable fun WorkspaceRoute(viewModel: WorkspaceViewModel = hiltViewModel())</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun CalendarView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun CodingView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun DocgenView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun FilesView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun NotesView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun PlannerView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun RemindersView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun ResearchView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun SectionHeader( title: String, subtitle: String? = null, )</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun TimelineView()</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun TodoRow( todo: Todo, onToggle: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun TodoView( todos: ImmutableList&lt;Todo&gt;, onToggle: (String) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:WorkspaceScreen.kt$@Composable private fun WorkspaceScreen( uiState: WorkspaceUiState, onSetSub: (WorkspaceSub) -&gt; Unit, onToggleTodo: (String) -&gt; Unit, )</ID>
+    <ID>LongMethod:AppShellScreen.kt$@Composable fun AppShellScreen(onSignOut: () -&gt; Unit)</ID>
+    <ID>LongMethod:AuraTabScreen.kt$@Composable private fun ChatContent( messages: ImmutableList&lt;ChatMessage&gt;, chatInput: String, isTyping: Boolean, developerModeEnabled: Boolean, onInputChange: (String) -&gt; Unit, onSend: () -&gt; Unit, onInspectTrace: (Long) -&gt; Unit, )</ID>
+    <ID>LongMethod:AuraTabScreen.kt$@Composable private fun MemoryContent( memories: ImmutableList&lt;Memory&gt;, onForget: (String) -&gt; Unit, )</ID>
+    <ID>LongMethod:AutomateScreen.kt$@Composable private fun AutomationsView( automations: ImmutableList&lt;Automation&gt;, onToggle: (String) -&gt; Unit, onRunQuickAction: (String, Map&lt;String, String&gt;) -&gt; Unit, onScanText: () -&gt; Unit, )</ID>
+    <ID>LongMethod:AutomateScreen.kt$@Composable private fun SmartHomeView( devices: ImmutableList&lt;Device&gt;, onToggle: (String) -&gt; Unit, )</ID>
+    <ID>LongMethod:AutomateScreen.kt$@Composable private fun WorkflowsView( workflows: ImmutableList&lt;Workflow&gt;, onAdd: (Workflow) -&gt; Unit, onSetEnabled: (Workflow, Boolean) -&gt; Unit, onDelete: (Workflow) -&gt; Unit, onRunNow: (Workflow) -&gt; Unit, )</ID>
+    <ID>LongMethod:HomeScreen.kt$@Composable private fun DashboardContent( uiState: HomeUiState, onOpenNotifications: () -&gt; Unit, onOpenAura: () -&gt; Unit, onOpenDeviceHealth: () -&gt; Unit, onOpenBattery: () -&gt; Unit, onOpenSmartHome: () -&gt; Unit, onOpenAutomations: () -&gt; Unit, )</ID>
+    <ID>LongMethod:LoginScreen.kt$@Composable private fun LoginScreen( uiState: LoginUiState, onRequestAuth: () -&gt; Unit, )</ID>
+    <ID>LongMethod:NavIcons.kt$@Composable fun NavGlyph( type: NavIconType, tint: Color, modifier: Modifier = Modifier, )</ID>
+    <ID>LongMethod:OnboardingArt.kt$@Composable fun OnboardingArtGlyph( art: OnboardingArt, modifier: Modifier = Modifier, )</ID>
+    <ID>LongMethod:OnboardingScreen.kt$@Composable private fun OnboardingScreen( uiState: OnboardingUiState, onNext: () -&gt; Unit, onSkip: () -&gt; Unit, )</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun AnalyticsView()</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun BatteryView()</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun MemoryManagerView(onClearAllMemory: () -&gt; Unit)</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun PersonalizationView( theme: ThemePreview, voice: AssistantVoice, voiceContinuousConversationEnabled: Boolean, onSetTheme: (ThemePreview) -&gt; Unit, onSetVoice: (AssistantVoice) -&gt; Unit, onSetVoiceContinuousConversationEnabled: (Boolean) -&gt; Unit, )</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun ProfileMainView( onNavigateSettings: () -&gt; Unit, onSignOut: () -&gt; Unit, )</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun ProviderSettingsCard( row: ProviderSettingsRow, onSetApiKey: (String) -&gt; Unit, onSetBaseUrl: (String) -&gt; Unit, onSetActive: () -&gt; Unit, )</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun SettingsView( providerRows: List&lt;ProviderSettingsRow&gt;, onSetProviderApiKey: (ProviderId, String) -&gt; Unit, onSetProviderBaseUrl: (ProviderId, String) -&gt; Unit, onSetActiveProvider: (ProviderId) -&gt; Unit, )</ID>
+    <ID>LongMethod:WorkflowPresets.kt$WorkflowPresets$fun all(): List&lt;Workflow&gt;</ID>
+    <ID>LongMethod:WorkspaceScreen.kt$@Composable private fun CalendarView()</ID>
+    <ID>LongMethod:WorkspaceScreen.kt$@Composable private fun CodingView()</ID>
+    <ID>LongParameterList:AuraTabScreen.kt$( messages: ImmutableList&lt;ChatMessage&gt;, chatInput: String, isTyping: Boolean, developerModeEnabled: Boolean, onInputChange: (String) -&gt; Unit, onSend: () -&gt; Unit, onInspectTrace: (Long) -&gt; Unit, )</ID>
+    <ID>LongParameterList:AuraTabScreen.kt$( uiState: AuraTabUiState, onSetSub: (AuraSub) -&gt; Unit, onOrbTap: () -&gt; Unit, onChatInputChange: (String) -&gt; Unit, onSend: () -&gt; Unit, onForgetMemory: (String) -&gt; Unit, onToggleDeveloperMode: () -&gt; Unit, onInspectTrace: (Long) -&gt; Unit, onDismissTrace: () -&gt; Unit, onDismissVoiceError: () -&gt; Unit, )</ID>
+    <ID>LongParameterList:AutomateScreen.kt$( uiState: AutomateUiState, onSetSub: (AutomateSub) -&gt; Unit, onToggleAutomation: (String) -&gt; Unit, onToggleDevice: (String) -&gt; Unit, onRunQuickAction: (String, Map&lt;String, String&gt;) -&gt; Unit, onDismissQuickActionResult: () -&gt; Unit, onScanText: () -&gt; Unit, onAddWorkflow: (Workflow) -&gt; Unit, onSetWorkflowEnabled: (Workflow, Boolean) -&gt; Unit, onDeleteWorkflow: (Workflow) -&gt; Unit, onRunWorkflowNow: (Workflow) -&gt; Unit, )</ID>
+    <ID>LongParameterList:Buttons.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, size: Dp = 42.dp, cornerRadius: Dp = AuraRadius.xl, contentDescription: String? = null, content: @Composable () -&gt; Unit, )</ID>
+    <ID>LongParameterList:ConversationPipeline.kt$ConversationPipeline$( private val executionContextProvider: ExecutionContextProvider, private val intentRecognizer: IntentRecognizer, private val memoryRetriever: MemoryRetriever, private val reasoningEngine: ReasoningEngine, private val capabilityResolver: CapabilityResolver, private val agentSelectionEngine: AgentSelectionEngine, private val executionCoordinator: ExecutionCoordinator, private val resultAggregator: ResultAggregator, private val planExecutor: PlanExecutor, )</ID>
+    <ID>LongParameterList:ConversationPipeline.kt$ConversationPipeline$( session: ConversationSession, userMessage: String, intent: RecognizedIntent, retrievedMemories: List&lt;MemoryEntry&gt;, stageMillis: MutableMap&lt;String, Long&gt;, overallStart: Long, )</ID>
+    <ID>LongParameterList:GlowOrb.kt$( modifier: Modifier = Modifier, size: Dp, color: Color = AuraColors.Accent.copy(alpha = 0.35f), strokeWidthDp: Float = 1f, durationMillis: Int, reverse: Boolean = false, dashed: Boolean = false, )</ID>
+    <ID>LongParameterList:GlowOrb.kt$( modifier: Modifier = Modifier, size: Dp, showDashedRing: Boolean = true, showScan: Boolean = false, ringDuration: Int = 12000, ringReverseDuration: Int = 16000, scanDuration: Int = 5000, pulseDuration: Int = 3400, glowAlpha: Float = 0.4f, )</ID>
+    <ID>LongParameterList:GlowOrb.kt$( modifier: Modifier = Modifier, size: Dp, stops: List&lt;Color&gt; = listOf(AuraColors.AccentLight, AuraColors.Accent, AuraColors.AccentDeep), glowColor: Color = AuraColors.Accent, glowAlpha: Float = 0.5f, glowSpread: Dp = size * 0.4f, pulseDurationMillis: Int? = null, )</ID>
+    <ID>LongParameterList:HomeScreen.kt$( uiState: HomeUiState, onOpenNotifications: () -&gt; Unit, onBackToDashboard: () -&gt; Unit, onOpenAura: () -&gt; Unit, onOpenDeviceHealth: () -&gt; Unit, onOpenBattery: () -&gt; Unit, onOpenSmartHome: () -&gt; Unit, onOpenAutomations: () -&gt; Unit, )</ID>
+    <ID>LongParameterList:HomeScreen.kt$( uiState: HomeUiState, onOpenNotifications: () -&gt; Unit, onOpenAura: () -&gt; Unit, onOpenDeviceHealth: () -&gt; Unit, onOpenBattery: () -&gt; Unit, onOpenSmartHome: () -&gt; Unit, onOpenAutomations: () -&gt; Unit, )</ID>
+    <ID>LongParameterList:Indicators.kt$( progress: Float, modifier: Modifier = Modifier, size: Dp = 140.dp, strokeWidth: Dp = 14.dp, activeColor: Color = AuraColors.Success, trackColor: Color = AuraColors.TextPrimary.copy(alpha = 0.1f), content: @Composable () -&gt; Unit, )</ID>
+    <ID>LongParameterList:ProfileScreen.kt$( theme: ThemePreview, voice: AssistantVoice, voiceContinuousConversationEnabled: Boolean, onSetTheme: (ThemePreview) -&gt; Unit, onSetVoice: (AssistantVoice) -&gt; Unit, onSetVoiceContinuousConversationEnabled: (Boolean) -&gt; Unit, )</ID>
+    <ID>LongParameterList:ProfileScreen.kt$( uiState: ProfileUiState, onSetSub: (ProfileSub) -&gt; Unit, onSetTheme: (ThemePreview) -&gt; Unit, onSetVoice: (AssistantVoice) -&gt; Unit, onSetVoiceContinuousConversationEnabled: (Boolean) -&gt; Unit, onSignOut: () -&gt; Unit, onSetProviderApiKey: (ProviderId, String) -&gt; Unit, onSetProviderBaseUrl: (ProviderId, String) -&gt; Unit, onSetActiveProvider: (ProviderId) -&gt; Unit, onClearAllMemory: () -&gt; Unit, )</ID>
+    <ID>LongParameterList:Surfaces.kt$( label: String, value: String, modifier: Modifier = Modifier, valueColor: Color = AuraColors.TextPrimary, valueFontSize: TextUnit = 20.sp, onClick: (() -&gt; Unit)? = null, )</ID>
+    <ID>LongParameterList:Surfaces.kt$( modifier: Modifier = Modifier, cornerRadius: Dp = AuraRadius.xl, fillAlpha: Float = 0.5f, borderColor: Color = AuraColors.TextPrimary.copy(alpha = 0.06f), onClick: (() -&gt; Unit)? = null, content: @Composable () -&gt; Unit, )</ID>
+    <ID>MatchingDeclarationName:BatteryStatus.kt$BatteryState</ID>
+    <ID>MatchingDeclarationName:BottomNavBar.kt$BottomNavEntry</ID>
+    <ID>MatchingDeclarationName:Color.kt$AuraColors</ID>
+    <ID>MatchingDeclarationName:Motion.kt$AuraMotion</ID>
+    <ID>MatchingDeclarationName:NavIcons.kt$NavIconType</ID>
+    <ID>MaxLineLength:AndroidBatteryStatusProvider.kt$AndroidBatteryStatusProvider$val isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL</ID>
+    <ID>MaxLineLength:AudioFocusCoordinator.kt$AudioFocusCoordinator$if</ID>
+    <ID>MaxLineLength:AuraRuntime.kt$AuraRuntime$fun session(sessionId: String): ConversationSession</ID>
+    <ID>MaxLineLength:AuraSeedData.kt$AuraSeedData$DeviceEntity("speaker", "Living Room Speaker", "speaker", isOn = true, meta = "Playing · Ambient", sortOrder = 4)</ID>
+    <ID>MaxLineLength:AuraSeedData.kt$AuraSeedData$TodoEntity("flights", "Book flights — offsite", "Due tomorrow", done = true, priority = "DONE", sortOrder = 2)</ID>
+    <ID>MaxLineLength:AuraSeedData.kt$AuraSeedData$TodoEntity("halcyon-copy", "Approve Halcyon rollout copy", "Due today", done = false, priority = "HIGH", sortOrder = 0)</ID>
+    <ID>MaxLineLength:AuraSeedData.kt$AuraSeedData$TodoEntity("legal-nda", "Reply to legal re: NDA", "Due today", done = false, priority = "MEDIUM", sortOrder = 1)</ID>
+    <ID>MaxLineLength:AuraSeedData.kt$AuraSeedData$TodoEntity("lock-firmware", "Renew smart lock firmware", "Due Fri", done = false, priority = "LOW", sortOrder = 4)</ID>
+    <ID>MaxLineLength:AuraSeedData.kt$AuraSeedData$TodoEntity("memory-review", "Review AURA memory log", "Weekly", done = false, priority = "LOW", sortOrder = 3)</ID>
+    <ID>MaxLineLength:AuraTabScreen.kt$.</ID>
+    <ID>MaxLineLength:AuraTabScreen.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:AuraTabScreen.kt$Row</ID>
+    <ID>MaxLineLength:AuraTabScreen.kt$if</ID>
+    <ID>MaxLineLength:AuraTabScreen.kt$textStyle = TextStyle(fontFamily = InterFontFamily, fontSize = 14.sp, color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:AuraTabScreen.kt$val borderColor = if (isUser) AuraColors.Accent.copy(alpha = 0.3f) else AuraColors.TextPrimary.copy(alpha = 0.08f)</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$.</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$AutomateSub.Automation -&gt; AutomationsView(uiState.automations, onToggleAutomation, onRunQuickAction, onScanText)</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$LazyColumn</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$Row</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$SubTabChipRow(items = AutomateSub.entries, selected = uiState.sub, label = { it.label }, onSelect = onSetSub)</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$Text(text = "Delete", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.6f))</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$Text(text = message, style = AuraTextStyles.bodySmall, color = AuraColors.TextPrimary, modifier = Modifier.padding(14.dp))</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$Text(text = plugin.description, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$Text(text = skill.name, style = AuraTextStyles.caption.copy(fontSize = 12.5.sp), color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$borderColor = if (automation.isOn) AuraColors.Accent.copy(alpha = 0.3f) else AuraColors.TextPrimary.copy(alpha = 0.06f)</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$if</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$modifier = Modifier.size(34.dp).clip(RoundedCornerShape(10.dp)).background(plugin.status.dotColor())</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$val bg = if (device.isOn) AuraColors.Accent.copy(alpha = 0.1f) else AuraColors.SurfaceGlass.copy(alpha = 0.5f)</ID>
+    <ID>MaxLineLength:AutomateScreen.kt$val border = if (device.isOn) AuraColors.Accent.copy(alpha = 0.3f) else AuraColors.TextPrimary.copy(alpha = 0.06f)</ID>
+    <ID>MaxLineLength:AutomationRepositoryImpl.kt$AutomationRepositoryImpl$override fun observeAutomations(): Flow&lt;List&lt;Automation&gt;&gt;</ID>
+    <ID>MaxLineLength:BatteryStatus.kt$&lt;no name provided&gt;$state = BatteryState(percent = percent, isCharging = charging, chargeTimeRemainingMillis = remaining)</ID>
+    <ID>MaxLineLength:BottomNavBar.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:Buttons.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:ChatRepositoryImpl.kt$ChatRepositoryImpl$override fun observeMessages(): Flow&lt;List&lt;ChatMessage&gt;&gt;</ID>
+    <ID>MaxLineLength:Chips.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:ConversationPipeline.kt$ConversationPipeline$planResult = AuraResult.Failure(AuraError.NotSupported("No execution plan was generated for this goal."))</ID>
+    <ID>MaxLineLength:ConversationPipeline.kt$ConversationPipeline$return@withContext buildUnreasonedResult(session, userMessage, intent, retrievedMemories, stageMillis, overallStart)</ID>
+    <ID>MaxLineLength:DeviceIcons.kt$arcTo(Rect(Offset(8f, 4f), Size(8f, 8f)), startAngleDegrees = 180f, sweepAngleDegrees = 180f, forceMoveTo = false)</ID>
+    <ID>MaxLineLength:DeviceNavigationTool.kt$DeviceNavigationTool$"action" to ParameterSchema(ParameterType.String, "One of: ${ACTIONS.keys.joinToString()}", required = true)</ID>
+    <ID>MaxLineLength:DeviceNavigationTool.kt$DeviceNavigationTool$?:</ID>
+    <ID>MaxLineLength:DeviceNavigationTool.kt$DeviceNavigationTool$AuraError.NotSupported("AURA's Accessibility Service isn't enabled — turn it on in Settings first.")</ID>
+    <ID>MaxLineLength:DiceRollerPlugin.kt$DiceRollerPlugin$data = mapOf("result" to result.toString(), "sides" to sides.toString(), "totalRolls" to total.toString())</ID>
+    <ID>MaxLineLength:HomeModels.kt$HomeSampleContent$TimelineItem("08:00", "Morning Boot Sequence ran", "Lights, weather, and calendar briefed", TimelineDot.Accent)</ID>
+    <ID>MaxLineLength:HomeScreen.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:HomeScreen.kt$Brush.radialGradient(listOf(AuraColors.AccentLight, AuraColors.Accent, AuraColors.AccentDeep))</ID>
+    <ID>MaxLineLength:HomeScreen.kt$Text(text = entry.subtitle, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:HomeScreen.kt$listOf(AuraColors.AccentDeep.copy(alpha = 0.5f), AuraColors.SurfaceGlass.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:ImageUnderstandingTool.kt$ImageUnderstandingTool$"${providerManager.activeProvider.value.displayName} doesn't support image understanding — switch to a vision-capable provider in Settings."</ID>
+    <ID>MaxLineLength:ImageUnderstandingTool.kt$ImageUnderstandingTool$"imageUri" to ParameterSchema(ParameterType.String, "content:// or file:// URI of the image", required = true)</ID>
+    <ID>MaxLineLength:ImageUnderstandingTool.kt$ImageUnderstandingTool$"question" to ParameterSchema(ParameterType.String, "What to ask about the image (default: \"Describe this image.\")")</ID>
+    <ID>MaxLineLength:ImageUnderstandingTool.kt$ImageUnderstandingTool$?:</ID>
+    <ID>MaxLineLength:ImageUnderstandingTool.kt$ImageUnderstandingTool$AiMessage(role = MessageRole.User, content = question, imageBase64 = base64, imageMimeType = mimeType)</ID>
+    <ID>MaxLineLength:ImageUnderstandingTool.kt$ImageUnderstandingTool$override val description = "Answers a question about an image using a connected AI provider's vision capability."</ID>
+    <ID>MaxLineLength:LoginScreen.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:MiscIcons.kt$arcTo(Rect(Offset(6f, 5.5f), Size(12f, 12f)), startAngleDegrees = 180f, sweepAngleDegrees = 180f, forceMoveTo = false)</ID>
+    <ID>MaxLineLength:NavIcons.kt$drawCircle(tint.copy(alpha = tint.alpha * 0.5f), radius = 9f, center = Offset(12f, 12f), style = Stroke(1f))</ID>
+    <ID>MaxLineLength:OnboardingScreen.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:PermissionIcons.kt$arcTo(Rect(Offset(5f, 2f), Size(14f, 14f)), startAngleDegrees = 0f, sweepAngleDegrees = -180f, forceMoveTo = false)</ID>
+    <ID>MaxLineLength:PlanExecutor.kt$PlanExecutor$return AuraResult.Failure(AuraError.Unknown("Plan has unresolved dependencies for step(s): $stuckIds"))</ID>
+    <ID>MaxLineLength:ProfileModels.kt$ProfileSampleContent$val profileLinks = listOf("Linked Accounts", "Privacy &amp; Data", "Subscription — AURA Pro", "Export My Data", "Sign Out")</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$"AURA never simulates taps or typing in other apps. Off by default — enabling it opens system Settings."</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$.</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Box(modifier = Modifier.size(10.dp).clip(RoundedCornerShape(3.dp)).background(categoryColor(category)))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Column</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$LazyColumn</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$ProfileSub.Profile -&gt; ProfileMainView(onNavigateSettings = { onSetSub(ProfileSub.Settings) }, onSignOut = onSignOut)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Row</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = "48 of 500 entries", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.6f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = "Accessibility Service", style = AuraTextStyles.cardTitle.copy(fontSize = 13.sp), color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = "Conversation continuation", style = AuraTextStyles.bodySmall, color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = "Focus time", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = "Memory used", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.6f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = "Tasks closed", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = action.description, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = app.name, style = AuraTextStyles.bodySmall, color = AuraColors.TextPrimary, modifier = Modifier.weight(1f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = category.size, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = row.displayName, style = AuraTextStyles.cardTitle.copy(fontSize = 13.sp), color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = row.label, style = AuraTextStyles.cardTitle.copy(fontSize = 13.sp), color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$Text(text = row.value, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$if (selected) AuraColors.Accent.copy(alpha = 0.4f) else AuraColors.TextPrimary.copy(alpha = 0.1f)</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$it</ID>
+    <ID>MaxLineLength:ProfileScreen.kt$textStyle = TextStyle(fontFamily = InterFontFamily, fontSize = 13.sp, color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:ReadScreenTool.kt$ReadScreenTool$AuraError.NotSupported("AURA's Accessibility Service isn't enabled — turn it on in Settings first.")</ID>
+    <ID>MaxLineLength:Surfaces.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:Toggle.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:VoiceInputController.kt$SpeechRecognizer.ERROR_NETWORK, SpeechRecognizer.ERROR_NETWORK_TIMEOUT -&gt; "Network error during speech recognition."</ID>
+    <ID>MaxLineLength:VoiceInputController.kt$private fun Bundle.bestMatch(): String?</ID>
+    <ID>MaxLineLength:WordCounterPlugin.kt$WordCounterPlugin$"text" to PluginParameterSchema(PluginParameterType.String, "The text to analyze", required = true)</ID>
+    <ID>MaxLineLength:WorkflowExecutorTest.kt$RecordingActionEngine$)</ID>
+    <ID>MaxLineLength:WorkflowExecutorTest.kt$WorkflowExecutorTest$val wf = workflow(listOf(WorkflowStep("media_control"), WorkflowStep("notify"), WorkflowStep("shopping_search")))</ID>
+    <ID>MaxLineLength:WorkflowPresets.kt$WorkflowPresets$WorkflowStep("notify", mapOf("title" to "Morning Brief", "message" to "Good morning! Here's your day ahead."))</ID>
+    <ID>MaxLineLength:WorkflowPresets.kt$WorkflowPresets$WorkflowStep("notify", mapOf("title" to "Study time", "message" to "Focus mode — playback paused."))</ID>
+    <ID>MaxLineLength:WorkflowPresets.kt$WorkflowPresets$WorkflowStep("notify", mapOf("title" to "Weekly Planning", "message" to "Time to plan your week ahead."))</ID>
+    <ID>MaxLineLength:WorkflowRepositoryImpl.kt$WorkflowRepositoryImpl$override fun observeWorkflows(): Flow&lt;List&lt;Workflow&gt;&gt;</ID>
+    <ID>MaxLineLength:WorkflowScheduler.kt$WorkflowScheduler$.</ID>
+    <ID>MaxLineLength:WorkflowStepEncoding.kt$WorkflowStepEncoding$val (nameEncoded, argsText) = stepText.split(NAME_DELIMITER, limit = 2).let { it[0] to it.getOrElse(1) { "" } }</ID>
+    <ID>MaxLineLength:WorkflowStepEncoding.kt$WorkflowStepEncoding$val args = step.arguments.entries.joinToString(ARG_DELIMITER) { (k, v) -&gt; "${enc(k)}$KV_DELIMITER${enc(v)}" }</ID>
+    <ID>MaxLineLength:WorkspaceModels.kt$WorkspaceSampleContent$TimelineEntry("06:30", "Workout window", "Recovered from yesterday · suggested light cardio", DotTone.Accent)</ID>
+    <ID>MaxLineLength:WorkspaceModels.kt$WorkspaceSampleContent$TimelineEntry("08:00", "Morning Boot Sequence", "Briefed weather, calendar, top 3 priorities", DotTone.Accent)</ID>
+    <ID>MaxLineLength:WorkspaceModels.kt$WorkspaceSampleContent$TimelineEntry("14:00", "Conflict: Design Review vs 1:1", "AURA proposes moving 1:1 to 15:30", DotTone.Warning)</ID>
+    <ID>MaxLineLength:WorkspaceModels.kt$WorkspaceSampleContent$val storageStats = listOf(StorageStat("128 GB", "Total"), StorageStat("71 GB", "Used"), StorageStat("57 GB", "Free"))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$@file:Suppress("DEPRECATION", "DEPRECATION_ERROR")</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Column</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$GlassSurface</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$LazyColumn</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Row</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = " · main branch", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = "Conflict", fontFamily = InterFontFamily, fontSize = 10.sp, color = AuraColors.Warning)</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = "Connected to ", style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = draft.meta, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = entry.title, style = AuraTextStyles.bodySmall, color = AuraColors.TextPrimary)</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = event.meta, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = file.meta, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = file.name, style = AuraTextStyles.bodySmall, color = AuraColors.TextPrimary, maxLines = 1)</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = reminder.whenText, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.5f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = source.domain, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = title, style = AuraTextStyles.headingMd, color = AuraColors.TextPrimary, modifier = Modifier.padding(top = 6.dp))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = todo.meta, style = AuraTextStyles.caption, color = AuraColors.TextPrimary.copy(alpha = 0.45f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$Text(text = type, fontFamily = InterFontFamily, fontSize = 11.sp, color = AuraColors.TextPrimary.copy(alpha = 0.7f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$color = if (day.isSelected) AuraColors.OnAccent else AuraColors.TextPrimary.copy(alpha = 0.7f)</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$modifier = Modifier.size(30.dp).clip(RoundedCornerShape(9.dp)).background(AuraColors.Accent.copy(alpha = 0.14f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$modifier = Modifier.size(34.dp).clip(RoundedCornerShape(10.dp)).background(AuraColors.Accent.copy(alpha = 0.12f))</ID>
+    <ID>MaxLineLength:WorkspaceScreen.kt$text = "function scheduleSync(user) {\n return aura.reconcile(user.calendar);\n}\n// AURA: refactored for O(n) merge — 3 tests passing"</ID>
+    <ID>ReturnCount:AndroidBatteryStatusProvider.kt$AndroidBatteryStatusProvider$override fun currentStatus(): BatteryStatus?</ID>
+    <ID>ReturnCount:AndroidNetworkStatusProvider.kt$AndroidNetworkStatusProvider$override fun currentState(): ConnectivityState</ID>
+    <ID>ReturnCount:AppAutomationTool.kt$AppAutomationTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:ConversationPipeline.kt$ConversationPipeline$private fun buildResponse( reasoningOutcome: ReasoningOutcome, execution: GoalExecution, ): String</ID>
+    <ID>ReturnCount:ConversationPipeline.kt$ConversationPipeline$private suspend fun executeGoal( goal: String, intent: RecognizedIntent, reasoningOutcome: ReasoningOutcome, selectedAgents: List&lt;Agent&gt;, ): GoalExecution</ID>
+    <ID>ReturnCount:DeviceNavigationTool.kt$DeviceNavigationTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:ImageUnderstandingTool.kt$ImageUnderstandingTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:PlanExecutor.kt$PlanExecutor$suspend fun run(plan: ExecutionPlan): AuraResult&lt;Map&lt;String, ToolResult&gt;&gt;</ID>
+    <ID>ReturnCount:WorkflowExecutionWorker.kt$WorkflowExecutionWorker$override suspend fun doWork(): Result</ID>
+    <ID>SwallowedException:ImageUnderstandingTool.kt$ImageUnderstandingTool$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ImageUnderstandingTool.kt$ImageUnderstandingTool$e: Exception</ID>
+    <ID>TooManyFunctions:AiCoreModule.kt$AiCoreModule</ID>
+    <ID>TooManyFunctions:AiPluginModule.kt$AiPluginModule</ID>
+    <ID>TooManyFunctions:AiReasoningModule.kt$AiReasoningModule</ID>
+    <ID>TooManyFunctions:AiToolsModule.kt$AiToolsModule</ID>
+    <ID>TooManyFunctions:AuraTabScreen.kt$com.aura.ai.presentation.aura.AuraTabScreen.kt</ID>
+    <ID>TooManyFunctions:AuraTabViewModel.kt$AuraTabViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:AutomateScreen.kt$com.aura.ai.presentation.automate.AutomateScreen.kt</ID>
+    <ID>TooManyFunctions:ProfileScreen.kt$com.aura.ai.presentation.profile.ProfileScreen.kt</ID>
+    <ID>TooManyFunctions:WorkspaceScreen.kt$com.aura.ai.presentation.workspace.WorkspaceScreen.kt</ID>
+  </CurrentIssues>
+</SmellBaseline>

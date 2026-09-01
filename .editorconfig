@@ -1,0 +1,20 @@
+root = true
+
+[*.{kt,kts}]
+indent_size = 4
+insert_final_newline = true
+
+# Composable functions are conventionally PascalCase (they're used like a type/component, not a
+# regular function) — the official Jetpack Compose style, not a naming-convention violation.
+ktlint_function_naming_ignore_when_annotated_with = Composable
+
+# This codebase's established KDoc/comment style is prose-dense and doesn't hard-wrap — enforcing
+# a fixed column limit would mean reflowing comments across nearly every file for no functional
+# benefit. Code line length is still kept reasonable by convention; this only stops ktlint from
+# failing the build over long documentation comments.
+max_line_length = off
+
+# A handful of pre-existing files (e.g. Color.kt defining AuraColors, BatteryStatus.kt defining
+# BatteryState) predate this convention and aren't worth a rename-only diff across an otherwise
+# unrelated milestone.
+ktlint_standard_filename = disabled

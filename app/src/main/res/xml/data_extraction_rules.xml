@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="aura_database" />
+        <!-- Excludes onboarding/permission/auth flags: restoring them to a new device
+             would desync the UI from that device's actual OS permission grants. -->
+        <exclude domain="file" path="datastore/aura_user_preferences.preferences_pb" />
+        <!-- The EncryptedSharedPreferences file backing AndroidProviderCredentialStore (AI
+             provider API keys). Its encryption key is Android-Keystore-bound and never leaves
+             this device, so a restored copy elsewhere is undecryptable ciphertext regardless —
+             excluded anyway for defense-in-depth, so no ambiguity about whether this was
+             considered. -->
+        <exclude domain="sharedpref" path="aura_provider_credentials.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="database" path="aura_database" />
+        <exclude domain="file" path="datastore/aura_user_preferences.preferences_pb" />
+        <!-- Unlike cloud-backup, some OEM device-transfer implementations can migrate
+             Keystore-backed keys alongside app data, which would make this file's ciphertext
+             decryptable on the new device — excluded here for a real, not just precautionary,
+             reason. -->
+        <exclude domain="sharedpref" path="aura_provider_credentials.xml" />
+    </device-transfer>
+</data-extraction-rules>

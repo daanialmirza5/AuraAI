@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>LongParameterList:DefaultPluginContext.kt$DefaultPluginContext$( override val pluginId: String, override val grantedPermissions: Set&lt;PluginPermission&gt;, override val tools: DefaultPluginToolRegistrar, override val capabilities: PluginCapabilityRegistrar, override val intents: PluginIntentRegistrar, override val storage: PluginStorage, override val settings: PluginSettings, override val events: PluginEventBus, private val logSink: (pluginId: String, message: String) -&gt; Unit, )</ID>
+    <ID>MaxLineLength:DefaultPluginCompatibilityChecker.kt$DefaultPluginCompatibilityChecker$"Plugin '${manifest.id}' requires host SDK ${manifest.minHostVersion} or later; this host is $host."</ID>
+    <ID>MaxLineLength:PluginAwareIntentRecognizer.kt$PluginAwareIntentRecognizer$RecognizedIntent(type = IntentType.Automation, confidence = confidence, slots = slots, rawText = utterance)</ID>
+    <ID>ReturnCount:DefaultPluginCompatibilityChecker.kt$DefaultPluginCompatibilityChecker$override fun check(manifest: PluginManifest): PluginCompatibilityResult</ID>
+    <ID>ReturnCount:DefaultPluginHealthMonitor.kt$DefaultPluginHealthMonitor$override suspend fun check(pluginId: String): PluginHealthReport?</ID>
+    <ID>ReturnCount:PluginAwareIntentRecognizer.kt$PluginAwareIntentRecognizer$override suspend fun recognize(utterance: String): AuraResult&lt;RecognizedIntent&gt;</ID>
+  </CurrentIssues>
+</SmellBaseline>

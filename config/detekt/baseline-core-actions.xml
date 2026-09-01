@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MaxLineLength:BarcodeScanTool.kt$BarcodeScanTool$"imageUri" to ParameterSchema(ParameterType.String, "content:// or file:// URI of the image", required = true)</ID>
+    <ID>MaxLineLength:BarcodeScanTool.kt$BarcodeScanTool$?:</ID>
+    <ID>MaxLineLength:ClipboardTool.kt$ClipboardTool$AuraResult.Success(ToolResult(summary = "The clipboard is empty (or unreadable while AURA is in the background)."))</ID>
+    <ID>MaxLineLength:DefaultActionEngine.kt$DefaultActionEngine$"'$toolName' requires explicit user confirmation and cannot run autonomously — run it directly from the Automate tab instead."</ID>
+    <ID>MaxLineLength:DeferredActionTool.kt$DeferredActionTool$"toolName" to ParameterSchema(ParameterType.String, "The tool to run later, e.g. \"notify\"", required = true)</ID>
+    <ID>MaxLineLength:DeferredActionTool.kt$DeferredActionTool$ParameterSchema(ParameterType.String, "Any argument the target tool needs, prefixed \"arg_\" (e.g. \"arg_message\")")</ID>
+    <ID>MaxLineLength:EmailTool.kt$EmailTool$return AuraResult.Failure(AuraError.InvalidRequest("At least one of recipient/subject/body is required."))</ID>
+    <ID>MaxLineLength:ExportPdfTool.kt$ExportPdfTool$page = document.startPage(PdfDocument.PageInfo.Builder(PAGE_WIDTH, PAGE_HEIGHT, pageNumber).create())</ID>
+    <ID>MaxLineLength:ExportPdfTool.kt$ExportPdfTool$var page = document.startPage(PdfDocument.PageInfo.Builder(PAGE_WIDTH, PAGE_HEIGHT, pageNumber).create())</ID>
+    <ID>MaxLineLength:FileSearchTool.kt$FileSearchTool$"query" to ParameterSchema(ParameterType.String, "Filename or partial filename to search for", required = true)</ID>
+    <ID>MaxLineLength:FileSearchTool.kt$FileSearchTool$ContextCompat.checkSelfPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED</ID>
+    <ID>MaxLineLength:MediaControlTool.kt$MediaControlTool$"action" to ParameterSchema(ParameterType.String, "One of: ${ACTIONS.keys.joinToString()}", required = true)</ID>
+    <ID>MaxLineLength:MediaControlTool.kt$MediaControlTool$?:</ID>
+    <ID>MaxLineLength:OcrTool.kt$OcrTool$"imageUri" to ParameterSchema(ParameterType.String, "content:// or file:// URI of the image", required = true)</ID>
+    <ID>MaxLineLength:OcrTool.kt$OcrTool$?:</ID>
+    <ID>MaxLineLength:OpenAppTool.kt$OpenAppTool$"appName" to ParameterSchema(ParameterType.String, "The app's display name, e.g. \"Spotify\"", required = true)</ID>
+    <ID>MaxLineLength:OpenAppTool.kt$OpenAppTool$?:</ID>
+    <ID>MaxLineLength:OpenSettingsTool.kt$OpenSettingsTool$"One of: ${SCREEN_ACTIONS.keys.joinToString()}. Falls back to the Settings home screen if omitted or unrecognized."</ID>
+    <ID>MaxLineLength:OpenSettingsTool.kt$OpenSettingsTool$screen.isNullOrEmpty() -&gt; context.launchIntentOrFail(Intent(Settings.ACTION_SETTINGS), "Opened Settings.")</ID>
+    <ID>MaxLineLength:ReceiptScanTool.kt$ReceiptScanTool$"imageUri" to ParameterSchema(ParameterType.String, "content:// or file:// URI of the receipt photo", required = true)</ID>
+    <ID>MaxLineLength:ReceiptScanTool.kt$ReceiptScanTool$?:</ID>
+    <ID>MaxLineLength:SaveFileTool.kt$SaveFileTool$"sourcePath" to ParameterSchema(ParameterType.String, "The temporary file path to save", required = true)</ID>
+    <ID>MaxLineLength:SaveFileTool.kt$SaveFileTool$ToolResult(summary = destination.absolutePath, data = mapOf("path" to destination.absolutePath))</ID>
+    <ID>MaxLineLength:SaveFileTool.kt$SaveFileTool$return@withContext AuraResult.Failure(AuraError.InvalidRequest("Source file does not exist: $sourcePath"))</ID>
+    <ID>ReturnCount:ClipboardTool.kt$ClipboardTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:DefaultActionEngine.kt$DefaultActionEngine$override suspend fun execute( toolName: String, arguments: Map&lt;String, String&gt;, ): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:FileSearchTool.kt$FileSearchTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:MediaControlTool.kt$MediaControlTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:OpenAppTool.kt$OpenAppTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:ReceiptScanTool.kt$ReceiptScanTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>ReturnCount:ReminderTool.kt$ReminderTool$override suspend fun execute(arguments: Map&lt;String, String&gt;): AuraResult&lt;ToolResult&gt;</ID>
+    <ID>SwallowedException:BarcodeScanTool.kt$BarcodeScanTool$e: IOException</ID>
+    <ID>SwallowedException:OcrTool.kt$OcrTool$e: IOException</ID>
+    <ID>SwallowedException:ReceiptScanTool.kt$ReceiptScanTool$e: IOException</ID>
+    <ID>TooGenericExceptionCaught:BarcodeScanTool.kt$BarcodeScanTool$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ExportPdfTool.kt$ExportPdfTool$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:OcrTool.kt$OcrTool$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ReceiptScanTool.kt$ReceiptScanTool$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SaveFileTool.kt$SaveFileTool$e: Exception</ID>
+  </CurrentIssues>
+</SmellBaseline>

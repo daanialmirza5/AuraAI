@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AURA AI</string>
+    <string name="accessibility_service_description">Lets AURA read the text visible on your current screen when you ask about it, and navigate back/home/recents on your behalf. AURA does not simulate taps or type into other apps.</string>
+</resources>

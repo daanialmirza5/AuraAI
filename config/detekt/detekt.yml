@@ -1,0 +1,36 @@
+build:
+  maxIssues: 0
+
+# Extends detekt's own default ruleset (buildUponDefaultConfig = true in build.gradle.kts) —
+# this file only overrides what genuinely needs tuning for this codebase, rather than
+# reimplementing the whole ruleset from scratch.
+
+style:
+  MagicNumber:
+    active: false # Pervasive in UI/design-system code (padding, sizes, alpha values) — not a
+                  # real smell there; the cases that matter (weights, thresholds) already have
+                  # named constants where it was worth naming them.
+  MaxLineLength:
+    active: false # Matches the same call already made for ktlint (see .editorconfig) — this
+                  # codebase's established KDoc/comment style is prose-dense and doesn't hard-wrap.
+
+naming:
+  FunctionNaming:
+    ignoreAnnotated: ["Composable"] # PascalCase is the correct, official Compose convention for
+                                     # a @Composable function — not a naming violation.
+
+complexity:
+  LongParameterList:
+    active: true
+    constructorThreshold: 8 # Several `Agent`/`ViewModel` constructors legitimately take this many
+                             # collaborators (Hilt-injected repositories/managers) — matches this
+                             # codebase's actual constructor shapes rather than the stricter default.
+  LongMethod:
+    ignoreAnnotated: ["Composable"] # A declarative Compose UI tree is naturally longer, line-wise,
+                                     # than an equivalent imperative function — length alone isn't
+                                     # the same complexity signal there that it is elsewhere.
+
+comments:
+  active: false # No KDoc-coverage enforcement — this codebase already documents the *why*, not
+                # every public symbol, by deliberate convention (see CLAUDE.md-equivalent guidance
+                # throughout docs/).

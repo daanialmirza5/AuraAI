@@ -1,0 +1,33 @@
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android / local SDK config — machine-specific, never shared
+local.properties
+
+# Signing — a release keystore is a secret; it must never be committed
+*.jks
+*.keystore
+keystore.properties
+
+# API keys / secrets — see docs/AI_PROVIDER_INTEGRATION.md for how these are supplied instead
+*.env
+secrets.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Room schema exports (generated, one per module that enables them)
+**/schemas/
+
+# Logs
+*.log
+
+# Local test/build scratch
+/tmp/

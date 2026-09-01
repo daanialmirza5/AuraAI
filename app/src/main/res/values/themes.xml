@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AuraAI" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/aura_bg</item>
+        <item name="android:navigationBarColor">@color/aura_bg</item>
+        <item name="android:windowBackground">@color/aura_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="Theme.AuraAI.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/aura_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_orb</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/aura_bg</item>
+        <item name="postSplashScreenTheme">@style/Theme.AuraAI</item>
+    </style>
+
+</resources>

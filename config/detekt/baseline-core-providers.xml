@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>LongMethod:GeminiProvider.kt$GeminiProvider$private fun buildRequest( url: String, request: GenerationRequest, ): Request</ID>
+    <ID>LoopWithTooManyJumpStatements:OllamaProvider.kt$OllamaProvider$while</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider$ProviderHttpErrors.fromStatus(displayName, response.code, retryAfterHeaderMillis(response), bodyText)</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider$private fun retryAfterHeaderMillis(response: okhttp3.Response): Long?</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider$request.messages.filter { it.role != MessageRole.System }.forEach { add(it.toClaudeMessage()) }</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider$trySend(AuraResult.Failure(AuraError.ProviderNotConnected(id, "$displayName has no API key configured yet.")))</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider.&lt;no name provided&gt;$ProviderHttpErrors.fromException(displayName, t ?: IOException("Stream closed unexpectedly."))</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider.&lt;no name provided&gt;$ProviderHttpErrors.fromStatus(displayName, response.code, retryAfterHeaderMillis(response), null)</ID>
+    <ID>MaxLineLength:ClaudeProvider.kt$ClaudeProvider.&lt;no name provided&gt;$if (!text.isNullOrEmpty()) trySend(AuraResult.Success(GenerationChunk(delta = text)))</ID>
+    <ID>MaxLineLength:ClaudeProviderTest.kt$ClaudeProviderTest$MockResponse().setResponseCode(429).setHeader("retry-after", "5").setBody("""{"error": "rate limited"}""")</ID>
+    <ID>MaxLineLength:DefaultAIProviderManager.kt$DefaultAIProviderManager$override suspend fun generate(request: GenerationRequest): AuraResult&lt;GenerationResponse&gt;</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider$?:</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider$ProviderHttpErrors.fromStatus(displayName, response.code, retryAfterHeaderMillis(response), bodyText)</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider$completionTokens = it["candidatesTokenCount"]?.jsonPrimitive?.contentOrNull?.toIntOrNull() ?: 0</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider$private fun retryAfterHeaderMillis(response: okhttp3.Response): Long?</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider$request.messages.filter { it.role != MessageRole.System }.forEach { add(it.toGeminiContent()) }</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider$trySend(AuraResult.Failure(AuraError.ProviderNotConnected(id, "$displayName has no API key configured yet.")))</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider.&lt;no name provided&gt;$ProviderHttpErrors.fromException(displayName, t ?: IOException("Stream closed unexpectedly."))</ID>
+    <ID>MaxLineLength:GeminiProvider.kt$GeminiProvider.&lt;no name provided&gt;$ProviderHttpErrors.fromStatus(displayName, response.code, retryAfterHeaderMillis(response), null)</ID>
+    <ID>MaxLineLength:OllamaProvider.kt$OllamaProvider$AuraResult.Failure(ProviderHttpErrors.fromStatus(displayName, response.code, null, bodyText))</ID>
+    <ID>MaxLineLength:OllamaProvider.kt$OllamaProvider$ProviderHttpErrors.fromStatus(displayName, response.code, null, response.body?.string())</ID>
+    <ID>MaxLineLength:OllamaProvider.kt$OllamaProvider$private suspend fun baseUrl(): String</ID>
+    <ID>MaxLineLength:OllamaProviderTest.kt$OllamaProviderTest$"""{"message": {"role": "assistant", "content": "Hello there!"}, "eval_count": 5, "prompt_eval_count": 10}"""</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider$?:</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider$ProviderHttpErrors.fromStatus(displayName, response.code, retryAfterHeaderMillis(response), bodyText)</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider$completionTokens = it["completion_tokens"]?.jsonPrimitive?.contentOrNull?.toIntOrNull() ?: 0</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider$private fun retryAfterHeaderMillis(response: okhttp3.Response): Long?</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider$trySend(AuraResult.Failure(AuraError.ProviderNotConnected(id, "$displayName has no API key configured yet.")))</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider.&lt;no name provided&gt;$ProviderHttpErrors.fromException(displayName, t ?: IOException("Stream closed unexpectedly."))</ID>
+    <ID>MaxLineLength:OpenAIProvider.kt$OpenAIProvider.&lt;no name provided&gt;$ProviderHttpErrors.fromStatus(displayName, response.code, retryAfterHeaderMillis(response), null)</ID>
+    <ID>SwallowedException:OllamaProvider.kt$OllamaProvider$e: IOException</ID>
+    <ID>UnusedParameter:OllamaProviderTest.kt$OllamaProviderTest$server: MockWebServer</ID>
+  </CurrentIssues>
+</SmellBaseline>

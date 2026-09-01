@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="database" path="aura_database" />
+    <exclude domain="file" path="datastore/aura_user_preferences.preferences_pb" />
+    <!-- See data_extraction_rules.xml for why this (the EncryptedSharedPreferences file backing
+         AndroidProviderCredentialStore) is excluded — this is the legacy pre-API-31 equivalent
+         of the same rule. -->
+    <exclude domain="sharedpref" path="aura_provider_credentials.xml" />
+</full-backup-content>

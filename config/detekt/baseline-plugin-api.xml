@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ReturnCount:PluginVersion.kt$PluginVersion.Companion$fun parse(text: String): PluginVersion?</ID>
+  </CurrentIssues>
+</SmellBaseline>

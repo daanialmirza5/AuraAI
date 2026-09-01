@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- outer ring, echoes the splash/orb rings -->
+    <path
+        android:pathData="M54,27a27,27 0,1 1,-0.1 0z"
+        android:strokeColor="#9184D9"
+        android:strokeWidth="1.4"
+        android:strokeAlpha="0.4"
+        android:fillColor="#00000000" />
+
+    <!-- core orb -->
+    <path android:pathData="M54,38a16,16 0,1 1,-0.1 0z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="49"
+                android:centerY="45"
+                android:gradientRadius="22"
+                android:startColor="#E3E0FF"
+                android:centerColor="#9184D9"
+                android:endColor="#362F5E" />
+        </aapt:attr>
+    </path>
+</vector>
