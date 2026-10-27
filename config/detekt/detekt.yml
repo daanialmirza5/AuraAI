@@ -32,5 +32,5 @@ complexity:
 
 comments:
   active: false # No KDoc-coverage enforcement — this codebase already documents the *why*, not
-                # every public symbol, by deliberate convention (see CLAUDE.md-equivalent guidance
+                # every public symbol, by deliberate convention (see the guidance
                 # throughout docs/).
