@@ -1,7 +1,7 @@
 # AURA AI — Roadmap
 
 **All ten Critical items toward Version 1.0 are done.** See
-[`AURA_V1_COMPLETION_REPORT.md`](AURA_V1_COMPLETION_REPORT.md) for the full picture — what
+[`docs/V1_RELEASE_REPORT.md`](docs/V1_RELEASE_REPORT.md) for the full picture — what
 shipped, what's verified, and what's next. Full detail, effort estimates, and blockers for every
 item below live in [docs/TODO_V1.md](docs/TODO_V1.md); this file is the short status view.
 

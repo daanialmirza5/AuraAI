@@ -309,4 +309,4 @@ Per item completed in the Critical tier, before moving to the next:
 9. Security — **✅ done 2026-07-29** (three real fixes: unwired "Clear all memory" now actually deletes data behind a confirmation dialog, the encrypted API-key store excluded from Android backup/device-transfer, the plugin log sink is a real no-op in release builds; export/import found unwired too, deliberately deferred to the already-tracked separate roadmap item rather than rushed — see SECURITY.md §5)
 10. Production Release — **✅ done 2026-07-30** (signing config wired but no keystore exists — the user's own secret; crash-logging hook added without a third-party account; About/Privacy Policy/Licenses added; app icons/splash confirmed already real; a Play Console account remains the user's own — see PRODUCTION_RELEASE.md §6)
 
-**All ten Critical items toward Version 1.0 are now done — see [`AURA_V1_COMPLETION_REPORT.md`](../AURA_V1_COMPLETION_REPORT.md) for the full picture.**
+**All ten Critical items toward Version 1.0 are now done — see [`V1_RELEASE_REPORT.md`](V1_RELEASE_REPORT.md) for the full picture.**
