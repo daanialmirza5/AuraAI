@@ -12,6 +12,7 @@ import com.aura.ai.core.reasoning.model.SubGoal
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.util.Locale
 import kotlin.system.measureNanoTime
 
 class ReasoningEngineBenchmarkTest {
@@ -38,21 +39,19 @@ class ReasoningEngineBenchmarkTest {
         override fun requiresNetwork(toolName: String): Boolean = toolName in networkTools
     }
 
-    private fun createBenchmarkContext(
-        tools: List<String> = listOf("export_pdf", "save_file", "record_audio", "web_search"),
-        isOnline: Boolean = true,
-        batteryPercent: Int = 85,
-        isCharging: Boolean = false,
-        grantedPermissions: List<String> = listOf("android.permission.RECORD_AUDIO", "android.permission.READ_CALENDAR"),
-        aiProviderAvailable: Boolean = true,
-    ) = ExecutionContext(
-        availableTools = tools.map { ToolDescriptor(name = it, description = "") },
-        connectivity = if (isOnline) ConnectivityState.Online else ConnectivityState.Offline,
-        battery = BatteryStatus(percent = batteryPercent, isCharging = isCharging, isLow = batteryPercent <= 15),
-        permissionState = grantedPermissions.associateWith { PermissionState.Granted },
-        aiProviderAvailable = aiProviderAvailable,
-        capturedAtMillis = System.currentTimeMillis(),
-    )
+    private fun createBenchmarkContext(tools: List<String> = listOf("export_pdf", "save_file", "record_audio", "web_search")) =
+        ExecutionContext(
+            availableTools = tools.map { ToolDescriptor(name = it, description = "") },
+            connectivity = ConnectivityState.Online,
+            battery = BatteryStatus(percent = 85, isCharging = false, isLow = false),
+            permissionState =
+                listOf("android.permission.RECORD_AUDIO", "android.permission.READ_CALENDAR")
+                    .associateWith { PermissionState.Granted },
+            aiProviderAvailable = true,
+            capturedAtMillis = System.currentTimeMillis(),
+        )
+
+    private fun Double.fmt(decimals: Int): String = String.format(Locale.ROOT, "%.${decimals}f", this)
 
     @Test
     fun `benchmark constraint evaluation latency and throughput across 1000 iterations`() {
@@ -90,10 +89,10 @@ class ReasoningEngineBenchmarkTest {
         println("  AURAAI ON-DEVICE CONSTRAINT REASONING BENCHMARK")
         println("================================================================================")
         println("  Total Iterations        : $iterations")
-        println("  Total Evaluation Time   : ${String.format("%.2f", totalDurationMillis)} ms")
-        println("  Average Latency / Eval  : ${String.format("%.2f", avgLatencyMicros)} µs")
+        println("  Total Evaluation Time   : ${totalDurationMillis.fmt(2)} ms")
+        println("  Average Latency / Eval  : ${avgLatencyMicros.fmt(2)} µs")
         println("  Constraints Evaluated   : $totalConstraintsEvaluated (${totalConstraintsEvaluated / iterations} per eval)")
-        println("  Throughput              : ${String.format("%.0f", (iterations / (totalDurationMillis / 1000.0)))} evaluations/sec")
+        println("  Throughput              : ${(iterations / (totalDurationMillis / 1000.0)).fmt(0)} evaluations/sec")
         println("================================================================================")
 
         // One evaluation covers 4 tools plus network, battery and AI checks.
@@ -140,7 +139,7 @@ class ReasoningEngineBenchmarkTest {
             }
 
         val avgMicros = (durationNanos / iterations.toDouble()) / 1_000.0
-        println("  Decision Engine Average Latency: ${String.format("%.2f", avgMicros)} µs")
+        println("  Decision Engine Average Latency: ${avgMicros.fmt(2)} µs")
         assertTrue("Decision engine should resolve in < 100 µs", avgMicros < 100.0)
     }
 }
