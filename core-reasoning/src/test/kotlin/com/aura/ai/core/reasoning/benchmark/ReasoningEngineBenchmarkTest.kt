@@ -107,9 +107,9 @@ class ReasoningEngineBenchmarkTest {
         val context = createBenchmarkContext()
 
         val subGoals = listOf(
-            SubGoal(description = "Search documentation", impliedToolName = "web_search", requiresAI = false),
-            SubGoal(description = "Synthesize report summary", impliedToolName = null, requiresAI = true),
-            SubGoal(description = "Save PDF to storage", impliedToolName = "export_pdf", requiresAI = false)
+            SubGoal(id = "search", description = "Search documentation", priority = 1, impliedToolName = "web_search", requiresAI = false),
+            SubGoal(id = "synthesize", description = "Synthesize report summary", priority = 2, impliedToolName = null, requiresAI = true),
+            SubGoal(id = "export", description = "Save PDF to storage", priority = 3, impliedToolName = "export_pdf", requiresAI = false)
         )
 
         // Warmup
